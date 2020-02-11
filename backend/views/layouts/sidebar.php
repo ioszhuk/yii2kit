@@ -22,7 +22,7 @@ use yii\helpers\Html;
                     'label' => 'Главная',
                     'icon' => 'fab fa-fort-awesome',
                     'template' => 'single',
-                    'url' => ['/home/index'],
+                    'url' => ['/site/index'],
                 ],
                 [
                     'label' => 'Настройки',

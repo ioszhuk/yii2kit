@@ -19,99 +19,10 @@ use yii\helpers\Html;
         <?= MetronicSidebar::widget([
             'items' => [
                 [
-                    'label' => 'Заказы',
-                    'icon' => 'flaticon-cart',
-                    'template' => 'single',
-                    'url' => ['/purchase/index'],
-                ],
-                [
-                    'label' => 'Индив. заказы',
-                    'icon' => 'flaticon-cart',
-                    'template' => 'single',
-                    'url' => ['/individual-product-purchase/index'],
-                ],
-                [
-                    'label' => 'Скидочные коды',
-                    'icon' => 'flaticon-gift',
-                    'template' => 'single',
-                    'url' => ['/discount/index'],
-                ],
-                [
-                    'label' => 'Подписки',
-                    'icon' => 'fab fa fa-at',
-                    'template' => 'single',
-                    'url' => ['/subscribe/index'],
-                ],
-
-//                [
-//                    'label'    => 'Обратная связь',
-//                    'icon'     => 'fab fa fa-at',
-//                    'template' => 'single',
-//                    'url'      => [ '/question/index' ],
-//                ],
-                [
                     'label' => 'Главная',
                     'icon' => 'fab fa-fort-awesome',
                     'template' => 'single',
                     'url' => ['/home/index'],
-                ],
-                [
-                    'label' => 'Коллекция',
-                    'icon' => 'flaticon-black',
-                    'template' => 'single',
-                    'url' => ['/shop-collection/index'],
-                ],
-                [
-                    'label' => 'Страницы',
-                    'icon' => 'fa fa-info-circle',
-                    'template' => 'single',
-                    'url' => ['/page/index'],
-                ],
-                [
-                    'label' => 'Категории товаров',
-                    'icon' => 'flaticon-map',
-                    'template' => 'submenu',
-                    'url' => ['#'],
-                    'items' => [
-                        ['label' => 'Главная категория', 'url' => ['/product-category/main-category']],
-                        ['label' => 'Категории товаров', 'url' => ['/product-category/index']],
-                    ]
-                ],
-                [
-                    'label' => 'Товары',
-                    'icon' => 'flaticon-eye',
-                    'template' => 'single',
-                    'url' => ['/product/index'],
-                ],
-                [
-                    'label' => 'Таблица размеров',
-                    'icon' => 'flaticon-imac',
-                    'template' => 'single',
-                    'url' => ['/settings/product-size-table-settings'],
-                ],
-                [
-                    'label' => 'Цвета товаров',
-                    'icon' => 'flaticon-star',
-                    'template' => 'single',
-                    'url' => ['/product-color/index'],
-                ],
-                [
-                    'label' => 'Размеры товаров',
-                    'icon' => 'flaticon-star',
-                    'template' => 'single',
-                    'url' => ['/product-size/index'],
-                ],
-                [
-                    'label' => 'Группы товаров',
-                    'icon' => 'flaticon-star',
-                    'template' => 'single',
-                    'url' => ['/product-group/index'],
-                ],
-                [
-                    'label' => 'Контакты стр.',
-                    'icon' => 'flaticon-menu-button',
-                    'template' => 'single',
-                    'url' => ['/settings/contacts-settings'],
                 ],
                 [
                     'label' => 'Настройки',
@@ -119,8 +30,6 @@ use yii\helpers\Html;
                     'template' => 'submenu',
                     'url' => ['#'],
                     'items' => [
-                        ['label' => 'Верхнее меню', 'url' => ['/menu/index']],
-                        ['label' => 'Нижнее меню', 'url' => ['/footer-menu/index']],
                         ['label' => 'Соц. сети', 'url' => ['/settings/social-group-settings']],
                         ['label' => 'Email и контакты', 'url' => ['/settings/site-config-settings']],
                         ['label' => 'Управление пользователями', 'url' => ['/user/admin/index']],

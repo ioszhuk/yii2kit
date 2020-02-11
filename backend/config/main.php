@@ -16,7 +16,6 @@ return [
 	'bootstrap' => ['log'],
 	'language' => 'ru-RU',
 	'name' => 'Admin CMS',
-	'defaultRoute' => 'purchase',
 	'as beforeRequest' => [
 		'class' => \yii\filters\AccessControl::className(),
 		'ruleConfig' => [
@@ -39,7 +38,7 @@ return [
 			'class' => Da\User\Module::className(),
 			'layout' => '@backend/views/layouts/main-clear',
 			'administrators' => [
-				'admin',
+				'admin', 'root'
 			],
 			'controllerMap' => [
 				'admin' => 'noIT\auth\controllers\AdminController',

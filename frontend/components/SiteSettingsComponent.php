@@ -43,9 +43,4 @@ class SiteSettingsComponent extends Component
             return [];
         }
     }
-
-    public function getCartSize()
-    {
-        return Cart::getProductsQuantity();
-    }
 }

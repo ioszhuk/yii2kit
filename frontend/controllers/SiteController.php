@@ -1,8 +1,6 @@
 <?php
 namespace frontend\controllers;
 
-use common\models\Home;
-use Yii;
 use yii\web\Controller;
 
 class SiteController extends Controller
@@ -25,26 +23,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $model = Home::findOne(Home::SINGLETON);
-
-        return $this->render('index', ['model' => $model]);
+        return 'home';
     }
 
-    /**
-     * @return string
-     */
-    public function actionContacts()
-    {
-        $lang = Yii::$app->language;
-
-        $content = Yii::$app->settings->get("content_{$lang}", 'ContactsSettings');
-        $title = Yii::$app->settings->get("title_{$lang}", 'ContactsSettings');
-        $description = Yii::$app->settings->get("description_{$lang}", 'ContactsSettings');
-
-        return $this->render('contacts', [
-            'content' => $content,
-            'title' => $title,
-            'description' => $description,
-        ]);
-    }
 }

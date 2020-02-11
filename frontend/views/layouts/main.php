@@ -51,8 +51,6 @@ AppAsset::register($this);
     <?= $this->render('@frontend/views/layouts/_footer') ?>
 </div>
 
-<?= DiscountModalWidget::widget() ?>
-
 <?= $this->render('@frontend/views/layouts/_components/_analytics') ?>
 
 <?php $this->endBody() ?>

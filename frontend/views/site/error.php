@@ -26,4 +26,3 @@ $this->title = $model[$lang]['title'];
 ?>
 <h1><?= $model[$lang]['title'] ?></h1>
 <p><?= $model[$lang]['summary'] ?></p>
-<p><a href="<?= Url::to(['product-category/index']) ?>"><?= Yii::t('app', 'go_to_catalog') ?></a></p>

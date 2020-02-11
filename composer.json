@@ -39,8 +39,7 @@
         "voskobovich/yii2-linker-behavior": "^4.0",
         "ext-json": "*",
         "kartik-v/yii2-widget-colorinput": "*",
-        "ext-curl": "*",
-      "ext-http": "*"
+        "ext-curl": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

@@ -19,17 +19,17 @@ return [
         'fixture' => [
             'class' => 'yii\console\controllers\FixtureController',
             'namespace' => 'common\fixtures',
-          ],
+        ],
         'migrate' => [
-	        'class' => \yii\console\controllers\MigrateController::className(),
-	        'migrationPath' => [
-		        '@app/migrations',
-		        '@yii/rbac/migrations',
-	        ],
-	        'migrationNamespaces' => [
-		        'Da\User\Migration',
+            'class' => \yii\console\controllers\MigrateController::className(),
+            'migrationPath' => [
+                '@app/migrations',
+                '@yii/rbac/migrations',
+            ],
+            'migrationNamespaces' => [
+                'Da\User\Migration',
                 'zxbodya\yii2\galleryManager\migrations',
-	        ],
+            ],
         ],
     ],
     'components' => [
@@ -42,7 +42,7 @@ return [
             ],
         ],
         'authManager' => [
-	        'class' => 'Da\User\Component\AuthDbManagerComponent',
+            'class' => 'Da\User\Component\AuthDbManagerComponent',
         ],
     ],
     'modules' => [

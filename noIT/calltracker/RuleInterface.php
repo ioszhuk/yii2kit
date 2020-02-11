@@ -1,6 +1,8 @@
 <?php
+
 namespace noIT\calltracker;
 
-interface RuleInterface {
+interface RuleInterface
+{
     public function run();
 }

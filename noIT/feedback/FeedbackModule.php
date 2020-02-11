@@ -7,8 +7,8 @@ namespace noIT\feedback;
  */
 class FeedbackModule extends \yii\base\Module
 {
-
     public $adminEmails = [];
+
     /**
      * {@inheritdoc}
      */
